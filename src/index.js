@@ -1,12 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+/*
+ * @Title: BONC - React
+ * @Descripttion: 
+ * @Company: 北京东方国信科技股份有限公司
+ * @Author: renlulu
+ * @Date: 2019-12-19 19:54:52
+ */
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css';
+// import store from './reduxTest/store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
+
+// store.subscribe(()=>{
+//   ReactDOM.render(
+//     <App />,
+//     document.getElementById('root')
+//   )
+// })
