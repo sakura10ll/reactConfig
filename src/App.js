@@ -12,12 +12,14 @@ import FromTest from './formTest';
 import ReduxTest from './reduxTest';
 import { Provider } from 'react-redux';
 import store from './reduxTest/store/index';
+import RouterTest from './routerTest' 
 
 function App() {
   return (
-    <Provider store={store}>
-      <ReduxTest></ReduxTest>
-    </Provider>
+    // <Provider store={store}>
+    //   <ReduxTest></ReduxTest>
+    // </Provider>
+    <RouterTest/>
   );
 }
 
